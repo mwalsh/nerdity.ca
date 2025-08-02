@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>nerdity</title>
+<link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+<style>
+body, table {
+  font-family: 'Fira Mono', mono;
+  font-size: 30px;
+  line-height: 40px;
+  color: #0F0;
+}
+body {
+  padding: 50px 50px;
+  background: #000;
+}
+#cursor {
+  font-size: 45px;
+  line-height: 30px;
+}
+</style>
+</head>
+<body>
+
+nerdity.ca:~$ <span id="cursor">&#x25AE;</span><br>
+
+<script>
+window.onload = function() {
+  var cursor = document.getElementById('cursor');
+  window.setInterval(function () {
+    cursor.style.visibility = (cursor.style.visibility == 'hidden') ? 'visible' : 'hidden';
+  }, 600);
+};
+</script>
+</body>
+</html>
+
